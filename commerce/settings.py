@@ -90,6 +90,8 @@ DATABASES = {
     }
 }
 
+SITE_ID = 1
+
 AUTH_USER_MODEL = 'auctions.User'
 
 # Password validation
