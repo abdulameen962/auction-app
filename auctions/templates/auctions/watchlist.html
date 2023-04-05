@@ -1,0 +1,28 @@
+{% extends 'auctions/layout.html' %}
+{% block title %}
+Watchlists
+{% endblock  %}
+{% block body %}
+<div class="container-fluid resize secondsection">
+    <h2>Your Watchlist(s)</h2>
+    <div class="listgrid">
+        {% for list in items %}
+        <a href="{% url 'auction:listing' list.id %}">
+            <div class="row itemrow">
+                <div class="col-12 img">
+                    <img src="../../media/{{ list.image }}" alt="{{ list.itemname }}" class="itemimage">
+                </div>
+                <div class="col-12 text">
+                    <h3> {{ list.itemname }} </h3>
+                    <p> {{ list.descr }} </p>
+                    <p>Current Bid price is ${{ list.price }}</p>
+                    <p>Created on {{ list.date }}</p>
+                </div>
+            </div>
+        </a>
+        {% empty %}
+        <p> No listings yet, <a href="{% url 'auction:create_view' %}"> Create listing </a> </p>
+        {% endfor %}
+    </div>
+</div>
+{% endblock  %}

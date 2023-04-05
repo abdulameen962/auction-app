@@ -1,0 +1,87 @@
+{% extends "auctions/layout.html" %} {% block title %} Auctions {% endblock %} {% block body %}
+<div class="container-fluid resize">
+    <div class="row firstrow">
+        <section id="main-carousel" class="splide col-sm-12 col-md-12 col-lg-12" aria-label="main carousel">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    {% for list in listings %}
+                    <li class="splide__slide">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 col-lg-6 text">
+                                <h1 class="itemname"> {{ list.itemname }} </h1>
+                                <p class="subtitle"> {{ list.descr }} </p>
+                                <p class="subtitle">Current Bid price is ${{ list.price }}</p>
+                                <p class="subtitle">Created on {{ list.date }}</p>
+                                <a href="{% url 'auction:listing' list.id %}"><span>See details</span> <span class="material-icons">north_east</span></a>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-6 img">
+                                <img src="../../media/{{ list.image }}" alt="{{ list.itemname }}" class="itemimage">
+                            </div>
+                        </div>
+                    </li>
+                    {% empty %}
+                    <p> No listings yet, <a href="{% url 'auction:create_view' %}"> Create listing </a> </p>
+                    {% endfor %}
+                </ul>
+            </div>
+        </section>
+        <section id="thumbnail-carousel" class="splide col-sm-12 col-md-12 col-lg-12" aria-label="thumbnails carousel">
+            <div class="splide__track">
+                <ul id="thumbnails" class="splide__list thumbnails">
+                    {% for list in listings %}
+                    <li class="splide__slide thumbnail "><img src="../../media/{{ list.image }}" alt="{{ list.itemname }}"></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </section>
+    </div>
+</div>
+
+{% comment %} for second section {% endcomment %}
+<div class="container-fluid resize secondsection">
+    {% if category is not None %} {% comment %} category listing view {% endcomment %}
+    <h2>Active Listings for {{ category.category }} </h2>
+    <div class="listgrid">
+        {% for list in categorylistings %}
+        <a href="{% url 'auction:listing' list.id %}">
+            <div class="row itemrow">
+                <div class="col-12 img">
+                    <img src="../../media/{{ list.image }}" alt="{{ list.itemname }}" class="itemimage">
+                </div>
+                <div class="col-12 text">
+                    <h3> {{ list.itemname }} </h3>
+                    <p> {{ list.descr }} </p>
+                    <p>Current Bid price is ${{ list.price }}</p>
+                    <p>Created on {{ list.date }}</p>
+                </div>
+            </div>
+        </a>
+        {% empty %}
+        <p> No listings yet, <a href="{% url 'auction:create_view' %}"> Create listing </a> </p>
+        {% endfor %}
+    </div>
+    {% else %} {% comment %} index view {% endcomment %}
+    <h2>All closed listings</h2>
+    <div class="listgrid">
+        {% for list in closedlistings %}
+        <a href="{% url 'auction:listing' list.id %}">
+            <div class="row itemrow">
+                <div class="col-12 img">
+                    <img src="../../media/{{ list.image }}" alt="{{ list.itemname }}" class="itemimage">
+                </div>
+                <div class="col-12 text">
+                    <h3> {{ list.itemname }} </h3>
+                    <p> {{ list.descr }} </p>
+                    <p>Opening Bid price was ${{ list.price }}</p>
+                    <p>Created on {{ list.date }}</p>
+                    <p>Winning bid is ${{ list.winningbid }}</p>
+                </div>
+            </div>
+        </a>
+        {% empty %}
+        <p> No closed listings yet </p>
+        {% endfor %}
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

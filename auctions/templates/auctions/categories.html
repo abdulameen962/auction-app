@@ -1,0 +1,14 @@
+{% extends 'auctions/layout.html' %}
+{% block title %}
+Categories
+{% endblock  %}
+{% block body %}
+<div class="container-fluid resize">
+    <h2> All available categories </h2>
+    {% for list in categories %}
+    <ul class="categories">
+        <li> <a href={% url 'auction:category_view' list.id %} > {{ list.category }}  </a> </li>
+    </ul>
+    {% endfor %}
+</div>
+{% endblock  %}

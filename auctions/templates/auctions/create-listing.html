@@ -1,0 +1,36 @@
+{% extends 'auctions/layout.html' %}
+{% block title %}
+Create Listing
+{% endblock  %}
+{% block body %}
+<div class="container-fluid resize">
+    <h2> Create new listing </h2>
+    {% if message %}
+        <p class="subtitle"> {{ message }} </p>
+    {% endif %}
+    {% comment %} extra check for user incase of bypass {% endcomment %}
+    {% if user.is_authenticated %}
+    <form action="{% url 'auction:create_view' %}" method="POST" enctype="multipart/form-data" class="mainform">
+        {% csrf_token %}
+        <label class="subtitle" for="title">Enter title:</label><br>
+        <input type="text" name="title" id="title" autofocus required class="form-control"><br>
+        <label class="subtitle" for="descr">Enter Description:</label><br>
+        <textarea name="descr" cols="30" rows="10" required class="form-control"></textarea><br>
+        <label class="subtitle" for="bid">Enter Starting Bid:</label><br>
+        <input type="number" name="bid" required class="form-control"><br>
+        <label class="subtitle" for="image">Upload image:</label><br>
+        <input type="file" name="image" accept="image/*" class="form-control"><br>
+        <label class="subtitle" for="category">Choose category:</label><br>
+        <select name="category" id="category" required class="form-control">
+            {% for category in categories %}
+            <option value="{{ category }}" class="subtitle"> {{ category }} </option>
+            {% empty %}
+            <option value="No category" > No categories available,check later</option>
+            {% endfor %}
+        </select><br>
+        <input type="submit" value="Create listing"/><br/>
+    </form>
+</div>
+{% endif %}
+
+{% endblock  %}

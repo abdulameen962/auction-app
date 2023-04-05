@@ -1,0 +1,71 @@
+{% extends 'auctions/layout.html' %} {% block title %} {{ item.itemname }} {% endblock %} {% block body %}
+<div class="container-fluid resize">
+   <div class="listing">
+        <div class="img">
+            <img src="../../media/{{ item.image }}" alt="{{ item.itemname }}" class="itemimage" />
+        </div>
+        <div class="text">
+            <div class="text-summary">
+                <p class="subtitle"> {{ item.category }} </p>
+                <h2> {{ item.itemname }} </h2>
+                <p class="descr">{{ item.descr }}</p>
+            </div>
+            <div class="row bidauction">
+                <div class="pricetext col-sm-12 col-md-12 col-lg-6">
+                    <p class="subtitle"> Starting price is ${{ item.price }} </p>
+                    <p class="subtitle">Listed time: {{ item.date }}</p>
+                    <p class="subtitle">There has been {{ bids }} bid(s) on {{ item.itemname }}</p>
+                    <p class="subtitle"> {{ message }} </p>
+                </div>
+                <div class="actions col-sm-12 col-md-12 col-lg-6">
+                    {% if user.is_authenticated %}
+                    {% comment %} check if user created the listing and it is active or inactive {% endcomment %}
+                    {% if item.state == True %}
+                        {% comment %} check if item is on user wishlist {% endcomment %}
+                        {% if item in watchlists %}
+                            <a href="{% url 'auction:remove_watchlist' item.id %}" class"primarybtn"> Remove from watchlist </a>
+                        {% else %}
+                            <a href="{% url 'auction:add_watchlist' item.id %}" class"primarybtn"> Add to watchlist </a>
+                        {% endif %}
+                        <form action="{% url 'auction:listing' item.id %}" method="post">
+                            {% csrf_token %}
+                            <input type="number" name="bid" id="bid" autofocus required placeholder="Place your bid" class="form-control"/><br/>
+                        </form>
+                </div>
+            </div>
+            <div class="bottom">
+                {% if user.id == creator.id %}
+                    <a href="{% url 'auction:close_listing' item.id %}">Close Listing</a><br/>
+                {% endif %}
+                <form action="{% url 'auction:add_comment' item.id %}" method="post">
+                    {% csrf_token %}
+                    <textarea name="comment" class="form-control" maxlength="500" required placeholder="Add comment"></textarea><br>
+                    <input class="btn btn-secondary" type="submit" value="Add comment"><br/>
+                </form>
+                {% elif item.state == False %}
+                    <p> This listing has been closed </p>
+                    {% if user.id == maxuser.id %}
+                        <h3>You won the listing</h3>
+                    {% endif %}
+                {% elif item.state == True%}
+                {% endif %}
+        
+            {% else %}
+                <p class="medtext">Your are not logged in, <a href="{% url 'auction:login' %}">Login</a> to make your bid</p>
+            {% endif %}
+            <div class="comments">
+                <h3>Comments</h3>
+                {% for comment in comments %}
+                <ul>
+                    <li>{{ comment.comment }}</li>
+                </ul>
+                {% empty %}
+                <p class="medtext">No available comments,add comment below</p>
+                {% endfor %}
+            </div>
+            </div>
+        </div>
+   </div>
+</div>
+
+{% endblock %}
