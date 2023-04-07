@@ -191,10 +191,19 @@ nav {
                 @include respond(tab) {
                     display: block;
                 }
+                @include respond(lphone) {
+                    display: none;
+                }
             }
             &.contact2 {
                 @include respond(tab) {
                     display: none;
+                }
+            }
+            &.contact3 {
+                display: none;
+                @include respond(lphone) {
+                    display: block;
                 }
             }
             &.contact-responsive {

@@ -35,8 +35,10 @@
                     {% if user.is_authenticated %}
                     <li class="nav-item nav-li"><a class="nav-link" href="{% url 'auction:create_view' %}">Create new listings</a></li>
                     <li class="nav-item nav-li"><a class="nav-link" href="{% url 'auction:watchlist_view' %}">View watchlists</a></li>
+                    <li class="nav-item nav-li"><a class="nav-link contact3" href="{% url 'auction:logout' %}">Log Out</a> </li>
                     {% else %}
                     <li class="nav-item nav-li"><a class="nav-link" href="{% url 'auction:register' %}">Register</a></li>
+                    <li class="nav-item nav-li"><a class="nav-link contact3" href="{% url 'auction:login' %}">Log In</a></li>
                     {% endif %}
                 </ul>
             </div>

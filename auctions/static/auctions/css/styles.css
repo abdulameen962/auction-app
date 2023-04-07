@@ -372,9 +372,17 @@ nav {
       @media screen and (min-width: 0px) and (max-width: 991px) {
         nav div.container-fluid a.contact1 {
           display: block; } }
+      @media screen and (min-width: 0px) and (max-width: 767px) {
+        nav div.container-fluid a.contact1 {
+          display: none; } }
     @media screen and (min-width: 0px) and (max-width: 991px) {
       nav div.container-fluid a.contact2 {
         display: none; } }
+    nav div.container-fluid a.contact3 {
+      display: none; }
+      @media screen and (min-width: 0px) and (max-width: 767px) {
+        nav div.container-fluid a.contact3 {
+          display: block; } }
     nav div.container-fluid a.contact-responsive {
       display: none; }
       @media screen and (min-width: 0px) and (max-width: 767px) {
