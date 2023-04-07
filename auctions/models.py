@@ -1,5 +1,6 @@
 from django.contrib.auth.models import AbstractUser
 from django.db import models
+from cloudinary.models import CloudinaryField
 
 
 class User(AbstractUser):
@@ -17,7 +18,7 @@ class Listing(models.Model):
     price = models.IntegerField()
     descr = models.CharField(max_length=500, default=None)
     date = models.DateTimeField(auto_now_add=True)
-    image = models.ImageField(upload_to="images/items", default=None)
+    image =  CloudinaryField('image')
     category = models.ForeignKey(Category, on_delete=models.CASCADE,related_name="divisions", default=None)
     wishlist = models.ManyToManyField(User,blank=True, related_name="wishitem")
     createdlist = models.ManyToManyField(User,blank=True, related_name="createditem")

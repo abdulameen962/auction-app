@@ -1,0 +1,728 @@
+.font, h1, h2, h3, h4, h5, h6, p, button, .subtitle, .medtext, a, input, textarea, a.header-button, .primary-button, .secondary-button, nav div.container-fluid div ul li a, div.firstrow section.splide > div.splide__track ul.splide__list > li div.row > div.text a, div.listing div.text div.bidauction div.actions a, div.bottom > a {
+  font-family: regular; }
+
+.font-weight, h1, h2, h3, h4, h5, h6, button {
+  font-weight: 700; }
+
+div.main-extend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 110px 0px; }
+  @media screen and (min-width: 0em) and (max-width: 479px) {
+    div.main-extend {
+      padding: 80px 0px; } }
+
+.font, h1, h2, h3, h4, h5, h6, p, button, .subtitle, .medtext, a, input, textarea, a.header-button, .primary-button, .secondary-button, nav div.container-fluid div ul li a, div.firstrow section.splide > div.splide__track ul.splide__list > li div.row > div.text a, div.listing div.text div.bidauction div.actions a, div.bottom > a {
+  font-family: regular; }
+
+.font-weight, h1, h2, h3, h4, h5, h6, button {
+  font-weight: 700; }
+
+div.main-extend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 110px 0px; }
+  @media screen and (min-width: 0em) and (max-width: 479px) {
+    div.main-extend {
+      padding: 80px 0px; } }
+
+@font-face {
+  font-family: regular;
+  src: url("./fonts/PlusJakartaSans-Regular.ttf"), local("sans-serif");
+  font-display: swap; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+  ul li {
+    list-style-position: inside;
+    margin: 0;
+    padding: 0; }
+    ul li span {
+      margin: 0;
+      padding: 0;
+      margin-left: -10px; }
+
+h1 {
+  line-height: 1.308em;
+  font-size: 48px;
+  margin-bottom: 0px; }
+  @media screen and (min-width: 0px) and (max-width: 991px) {
+    h1 {
+      font-size: 43px; } }
+  @media screen and (min-width: 0px) and (max-width: 767px) {
+    h1 {
+      font-size: 36px; } }
+  @media screen and (min-width: 0em) and (max-width: 479px) {
+    h1 {
+      font-size: 28px; } }
+
+h2 {
+  line-height: 1.316em;
+  font-size: 38px;
+  margin-bottom: 10px; }
+  @media screen and (min-width: 0px) and (max-width: 991px) {
+    h2 {
+      font-size: 38px; } }
+  @media screen and (min-width: 0px) and (max-width: 767px) {
+    h2 {
+      font-size: 32px; } }
+  @media screen and (min-width: 0em) and (max-width: 479px) {
+    h2 {
+      font-size: 26px; } }
+
+h3 {
+  line-height: 1.375em;
+  font-size: 24px; }
+  @media screen and (min-width: 0px) and (max-width: 991px) {
+    h3 {
+      font-size: 24px; } }
+  @media screen and (min-width: 0px) and (max-width: 767px) {
+    h3 {
+      font-size: 22px;
+      line-height: 22px; } }
+  @media screen and (min-width: 0em) and (max-width: 479px) {
+    h3 {
+      font-size: 20px;
+      line-height: 20px; } }
+
+h4 {
+  font-size: 22px;
+  line-height: 1.091em; }
+  @media screen and (min-width: 0px) and (max-width: 991px) {
+    h4 {
+      font-size: 20px; } }
+  @media screen and (min-width: 0px) and (max-width: 767px) {
+    h4 {
+      font-size: 18px; } }
+
+h5 {
+  line-height: 1.389em;
+  font-size: 18px; }
+  @media screen and (min-width: 0em) and (max-width: 479px) {
+    h5 {
+      font-size: 16px; } }
+
+h6 {
+  font-size: 16px;
+  line-height: 1.125em; }
+
+p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.800em;
+  padding: 10px 0px; }
+
+button {
+  font-size: 16px; }
+
+.subtitle {
+  font-size: 18px;
+  line-height: 1.2em;
+  font-weight: 300; }
+  @media screen and (min-width: 0px) and (max-width: 991px) {
+    .subtitle {
+      font-size: 16px; } }
+
+.medtext {
+  font-size: 18px;
+  line-height: 1.125em; }
+  @media screen and (min-width: 0px) and (max-width: 991px) {
+    .medtext {
+      font-size: 18px; } }
+
+a {
+  font-size: 16px;
+  text-decoration: none; }
+
+input {
+  font-size: 16px; }
+
+textarea {
+  font-size: 16px; }
+
+body {
+  padding: 10px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: regular; }
+
+.itemimage {
+  width: 500px;
+  border-radius: 10px; }
+
+image {
+  max-width: 700px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative; }
+
+img {
+  height: auto;
+  width: auto; }
+
+a.header-button {
+  padding: 16px 26px;
+  line-height: 1.125em;
+  color: white;
+  text-decoration: none;
+  border-radius: 80px;
+  color: white;
+  background: #292C32;
+  transition: all 0.3s ease; }
+  a.header-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05); }
+
+div.buttons {
+  width: 100%; }
+  div.buttons a.secondary-button {
+    color: #292C32;
+    margin-left: 30px; }
+    @media screen and (min-width: 0em) and (max-width: 479px) {
+      div.buttons a.secondary-button {
+        margin: 0;
+        margin-top: 20px; } }
+  @media screen and (min-width: 0em) and (max-width: 479px) {
+    div.buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; } }
+
+.primary-button {
+  padding: 24px 44px;
+  font-size: 18px;
+  line-height: 1.389em;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  border-radius: 80px;
+  color: white;
+  background: #292C32; }
+  @media screen and (min-width: 0px) and (max-width: 991px) {
+    .primary-button {
+      padding: 25px 50px;
+      font-size: 16px;
+      line-height: 1.125em; } }
+  @media screen and (min-width: 0px) and (max-width: 767px) {
+    .primary-button {
+      padding: 25px 44px;
+      font-size: 16px;
+      line-height: 1.125em; } }
+  @media screen and (min-width: 0em) and (max-width: 479px) {
+    .primary-button {
+      width: 100%;
+      padding: 20px 30px;
+      text-align: center; } }
+  .primary-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05); }
+
+.secondary-button {
+  padding: 24px 44px;
+  font-size: 18px;
+  line-height: 1.389em;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  border-radius: 80px;
+  background: transparent;
+  color: #292C32;
+  border: 1px solid #292C32; }
+  @media screen and (min-width: 0px) and (max-width: 991px) {
+    .secondary-button {
+      padding: 25px 50px;
+      font-size: 16px;
+      line-height: 1.125em; } }
+  @media screen and (min-width: 0px) and (max-width: 767px) {
+    .secondary-button {
+      padding: 25px 44px;
+      font-size: 16px;
+      line-height: 1.125em; } }
+  @media screen and (min-width: 0em) and (max-width: 479px) {
+    .secondary-button {
+      width: 100%;
+      padding: 20px 30px;
+      text-align: center; } }
+  .secondary-button:hover {
+    transform: translateY(-5px);
+    border: 1px solid #343472;
+    color: #343472; }
+
+div.resize {
+  max-width: 1248px;
+  width: 100%;
+  padding: 0px 18px; }
+
+div.resize-small {
+  max-width: 551px; }
+
+div.resize-medium {
+  max-width: 994px;
+  width: 100%;
+  padding: 0px 24px; }
+
+div.subtitle-main {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start; }
+  div.subtitle-main div.subtitle-line {
+    width: 50px;
+    background: #292C32;
+    height: 2px;
+    margin-right: 15px; }
+  @media screen and (min-width: 0em) and (max-width: 479px) {
+    div.subtitle-main {
+      margin-bottom: 10px; } }
+
+nav {
+  width: 100%;
+  border-bottom: 1px solid #E7E9EE; }
+  nav div.collapse {
+    display: flex;
+    justify-content: center; }
+  @media screen and (min-width: 0px) and (max-width: 991px) {
+    nav li.nav-drop {
+      position: relative; } }
+  @media screen and (min-width: 0px) and (max-width: 991px) {
+    nav a.nav-drop {
+      display: block;
+      position: absolute;
+      top: 20px;
+      left: 80px; } }
+  nav span.nav-mix {
+    margin-right: 10px; }
+    @media screen and (min-width: 0px) and (max-width: 991px) {
+      nav span.nav-mix {
+        margin: 0px 10px 0px 0px;
+        display: block; } }
+  nav.nav-position {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    z-index: 4; }
+  nav div.container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 25px; }
+    nav div.container-fluid a.navbar-brand {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.3s ease; }
+      nav div.container-fluid a.navbar-brand:hover {
+        transform: scale(0.95); }
+    @media screen and (min-width: 0px) and (max-width: 991px) {
+      nav div.container-fluid {
+        padding-top: 20px;
+        padding-bottom: 20px; } }
+    nav div.container-fluid div.responsive-nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      justify-content: space-between; }
+    nav div.container-fluid div ul li.nav-li {
+      margin-right: 35px; }
+    nav div.container-fluid div ul li {
+      list-style-type: none;
+      transition: all 0.3s ease; }
+      nav div.container-fluid div ul li a {
+        color: #292C32;
+        font-size: 19px;
+        vertical-align: middle;
+        text-decoration: none; }
+        nav div.container-fluid div ul li a:hover {
+          color: #FFD3B9;
+          transition: all 0.5s ease; }
+        nav div.container-fluid div ul li a#navbarDropdown {
+          margin-right: 30px; }
+      @media screen and (min-width: 0px) and (max-width: 991px) {
+        nav div.container-fluid div ul li {
+          padding: 20px 0px 0px 0px; } }
+    nav div.container-fluid a.contact1 {
+      display: none;
+      margin-right: 35px; }
+      @media screen and (min-width: 0px) and (max-width: 991px) {
+        nav div.container-fluid a.contact1 {
+          display: block; } }
+      @media screen and (min-width: 0px) and (max-width: 767px) {
+        nav div.container-fluid a.contact1 {
+          display: none; } }
+    @media screen and (min-width: 0px) and (max-width: 991px) {
+      nav div.container-fluid a.contact2 {
+        display: none; } }
+    nav div.container-fluid a.contact-responsive {
+      display: none; }
+      @media screen and (min-width: 0px) and (max-width: 767px) {
+        nav div.container-fluid a.contact-responsive {
+          display: inline-block; } }
+
+div.signing {
+  padding: 15px; }
+
+div.firstrow {
+  margin-bottom: 40px; }
+  @media screen and (min-width: 0em) and (max-width: 479px) {
+    div.firstrow {
+      margin: 0;
+      padding: 0; } }
+  div.firstrow section.splide {
+    margin: 0;
+    padding: 0; }
+    div.firstrow section.splide > div.splide__arrows {
+      display: none; }
+    div.firstrow section.splide > ul.splide__pagination {
+      display: none; }
+    div.firstrow section.splide > div.splide__track ul.splide__list > li div.row {
+      margin: 0;
+      padding: 0; }
+      div.firstrow section.splide > div.splide__track ul.splide__list > li div.row > div {
+        margin: 0;
+        padding: 0; }
+      div.firstrow section.splide > div.splide__track ul.splide__list > li div.row > div.text {
+        padding: 15px 30px 15px 0px; }
+        @media screen and (min-width: 0em) and (max-width: 479px) {
+          div.firstrow section.splide > div.splide__track ul.splide__list > li div.row > div.text {
+            padding: 0px 30px 0px 0px; } }
+        div.firstrow section.splide > div.splide__track ul.splide__list > li div.row > div.text h1 {
+          margin-bottom: 5px; }
+        div.firstrow section.splide > div.splide__track ul.splide__list > li div.row > div.text p {
+          padding-top: 5px; }
+          @media screen and (min-width: 0em) and (max-width: 479px) {
+            div.firstrow section.splide > div.splide__track ul.splide__list > li div.row > div.text p {
+              line-height: 35px; } }
+        div.firstrow section.splide > div.splide__track ul.splide__list > li div.row > div.text p:nth-child(4) {
+          margin-bottom: 40px; }
+        div.firstrow section.splide > div.splide__track ul.splide__list > li div.row > div.text a {
+          padding: 24px 44px;
+          font-size: 18px;
+          line-height: 1.389em;
+          transition: all 0.3s ease;
+          text-decoration: none;
+          border-radius: 80px;
+          color: white;
+          background: #292C32;
+          margin: 15px 0px 0px 0px; }
+          @media screen and (min-width: 0px) and (max-width: 991px) {
+            div.firstrow section.splide > div.splide__track ul.splide__list > li div.row > div.text a {
+              padding: 25px 50px;
+              font-size: 16px;
+              line-height: 1.125em; } }
+          @media screen and (min-width: 0px) and (max-width: 767px) {
+            div.firstrow section.splide > div.splide__track ul.splide__list > li div.row > div.text a {
+              padding: 25px 44px;
+              font-size: 16px;
+              line-height: 1.125em; } }
+          @media screen and (min-width: 0em) and (max-width: 479px) {
+            div.firstrow section.splide > div.splide__track ul.splide__list > li div.row > div.text a {
+              width: 100%;
+              padding: 20px 30px;
+              text-align: center; } }
+          div.firstrow section.splide > div.splide__track ul.splide__list > li div.row > div.text a:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05); }
+          div.firstrow section.splide > div.splide__track ul.splide__list > li div.row > div.text a:hover {
+            margin-bottom: 15px; }
+          div.firstrow section.splide > div.splide__track ul.splide__list > li div.row > div.text a span {
+            margin: 0px 3px; }
+          @media screen and (min-width: 0em) and (max-width: 479px) {
+            div.firstrow section.splide > div.splide__track ul.splide__list > li div.row > div.text a {
+              display: block;
+              margin: 5px 0px 0px 0px; } }
+      div.firstrow section.splide > div.splide__track ul.splide__list > li div.row > div.img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; }
+        div.firstrow section.splide > div.splide__track ul.splide__list > li div.row > div.img img {
+          min-width: 380px;
+          min-height: 450px;
+          max-height: 500px; }
+          @media screen and (min-width: 0em) and (max-width: 479px) {
+            div.firstrow section.splide > div.splide__track ul.splide__list > li div.row > div.img img {
+              border-radius: 15px; } }
+  div.firstrow ul.thumbnails {
+    margin: 0;
+    padding: 0; }
+    div.firstrow ul.thumbnails li {
+      width: 120px;
+      height: 120px;
+      list-style-type: none;
+      cursor: pointer;
+      padding: 10px 23px;
+      transition: all 0.5s ease-in-out;
+      padding: 0px;
+      margin: 35px 0px; }
+      div.firstrow ul.thumbnails li:hover {
+        transform: scale(1.03); }
+      div.firstrow ul.thumbnails li img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px; }
+
+.splide__slide {
+  opacity: 0.6; }
+
+.splide__slide.is-active {
+  border: none;
+  opacity: 1;
+  transform: scale(1.03); }
+
+div.secondsection {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  div.secondsection div.listgrid {
+    margin-top: 30px;
+    background: white;
+    border-radius: 10px;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 50px 30px; }
+    @media screen and (min-width: 0px) and (max-width: 767px) {
+      div.secondsection div.listgrid {
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(1, minmax(0, 1fr)); } }
+    div.secondsection div.listgrid > a {
+      transition: all 0.5s ease; }
+      div.secondsection div.listgrid > a:hover {
+        transform: scale(1.008); }
+    div.secondsection div.listgrid div.itemrow {
+      cursor: pointer;
+      height: 100%;
+      box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+      border: 1px solid #E7E9EE;
+      border-radius: 10px; }
+      div.secondsection div.listgrid div.itemrow div.img {
+        margin: 0;
+        padding: 0; }
+        div.secondsection div.listgrid div.itemrow div.img img {
+          max-width: 100%;
+          width: 100%;
+          border-radius: 0;
+          border-top-right-radius: 10px;
+          border-top-left-radius: 10px; }
+      div.secondsection div.listgrid div.itemrow div.text {
+        color: #292C32;
+        padding: 15px 10px; }
+        div.secondsection div.listgrid div.itemrow div.text p {
+          padding: 5px; }
+
+form.mainform {
+  margin: 20px 0px; }
+  form.mainform input,
+  form.mainform textarea,
+  form.mainform select {
+    margin-top: 20px; }
+  form.mainform input:not(input[type="submit"]) {
+    margin-bottom: 20px;
+    padding: 10px 0.75rem;
+    font-size: 18px; }
+  form.mainform input[type="submit"] {
+    padding: 15px 25px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    transition: all 0.5s ease; }
+    form.mainform input[type="submit"]:hover {
+      transform: scale(1.02); }
+  form.mainform select option {
+    font-weight: 300; }
+  form.mainform textarea {
+    resize: none; }
+
+ul.categories li {
+  list-style-type: none;
+  cursor: pointer;
+  padding: 10px 23px;
+  list-style-type: circle;
+  padding-left: 0;
+  padding-right: 0; }
+  ul.categories li a {
+    text-decoration: none;
+    color: #292C32;
+    font-size: 18px;
+    transition: all 0.5s ease; }
+    ul.categories li a:hover {
+      text-decoration: underline; }
+
+div.listing {
+  height: 100%;
+  margin-bottom: 40px;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0px 30px; }
+  @media screen and (min-width: 0px) and (max-width: 767px) {
+    div.listing {
+      display: grid;
+      justify-content: space-between;
+      grid-template-columns: repeat(1, minmax(0, 1fr)); } }
+  div.listing div.img {
+    margin: 0;
+    padding: 0;
+    padding: 20px;
+    border: 2px solid #E7E9EE;
+    height: 100%;
+    border-radius: 20px; }
+    div.listing div.img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px; }
+    @media screen and (min-width: 0em) and (max-width: 479px) {
+      div.listing div.img {
+        padding: 10px; } }
+  div.listing div.text {
+    margin: 0;
+    padding: 0;
+    padding: 25px 0px; }
+    div.listing div.text p:nth-child(2) {
+      margin: 0;
+      color: #6F7278;
+      margin: 0;
+      padding: 0; }
+    div.listing div.text p {
+      padding: 5px 0px;
+      margin: 5px 0px; }
+    div.listing div.text div.text-summary h2 {
+      padding: 0;
+      margin-bottom: 10px;
+      margin: 0;
+      padding: 0; }
+    div.listing div.text div.text-summary p.descr {
+      font-size: 18px;
+      color: #6F7278;
+      margin: 0;
+      padding: 0; }
+    div.listing div.text div.bidauction {
+      margin: 0;
+      padding: 0;
+      margin: 25px 0px; }
+      div.listing div.text div.bidauction > div {
+        margin: 0;
+        padding: 0; }
+        div.listing div.text div.bidauction > div p.subtitle {
+          font-size: 18px;
+          font-weight: 300; }
+      div.listing div.text div.bidauction div.pricetext {
+        padding-right: 15px;
+        margin: 0; }
+      div.listing div.text div.bidauction div.actions {
+        margin-top: 10px; }
+        div.listing div.text div.bidauction div.actions a {
+          text-decoration: none;
+          color: #292C32;
+          padding: 24px 44px;
+          font-size: 18px;
+          line-height: 1.389em;
+          transition: all 0.3s ease;
+          text-decoration: none;
+          border-radius: 80px;
+          color: white;
+          background: #292C32;
+          display: block;
+          text-align: center; }
+          @media screen and (min-width: 0px) and (max-width: 991px) {
+            div.listing div.text div.bidauction div.actions a {
+              padding: 25px 50px;
+              font-size: 16px;
+              line-height: 1.125em; } }
+          @media screen and (min-width: 0px) and (max-width: 767px) {
+            div.listing div.text div.bidauction div.actions a {
+              padding: 25px 44px;
+              font-size: 16px;
+              line-height: 1.125em; } }
+          @media screen and (min-width: 0em) and (max-width: 479px) {
+            div.listing div.text div.bidauction div.actions a {
+              width: 100%;
+              padding: 20px 30px;
+              text-align: center; } }
+          div.listing div.text div.bidauction div.actions a:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05); }
+        div.listing div.text div.bidauction div.actions form {
+          margin-top: 10px; }
+          div.listing div.text div.bidauction div.actions form input {
+            border-radius: 70px;
+            padding: 20px 30px;
+            font-size: 18px; }
+
+div.bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-direction: column-reverse;
+  align-items: flex-start; }
+  div.bottom > form {
+    margin-top: 20px;
+    width: 100%; }
+    div.bottom > form textarea {
+      resize: none;
+      height: 300px; }
+    div.bottom > form input[type="submit"] {
+      padding: 15px 25px;
+      cursor: pointer;
+      font-size: 18px;
+      border-radius: 5px;
+      outline: none;
+      border: none;
+      transition: all 0.5s ease; }
+      div.bottom > form input[type="submit"]:hover {
+        transform: scale(1.02); }
+  div.bottom > a {
+    text-decoration: none;
+    color: #292C32;
+    padding: 24px 44px;
+    font-size: 18px;
+    line-height: 1.389em;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    border-radius: 80px;
+    background: transparent;
+    color: #292C32;
+    border: 1px solid #292C32; }
+    @media screen and (min-width: 0px) and (max-width: 991px) {
+      div.bottom > a {
+        padding: 25px 50px;
+        font-size: 16px;
+        line-height: 1.125em; } }
+    @media screen and (min-width: 0px) and (max-width: 767px) {
+      div.bottom > a {
+        padding: 25px 44px;
+        font-size: 16px;
+        line-height: 1.125em; } }
+    @media screen and (min-width: 0em) and (max-width: 479px) {
+      div.bottom > a {
+        width: 100%;
+        padding: 20px 30px;
+        text-align: center; } }
+    div.bottom > a:hover {
+      transform: translateY(-5px);
+      border: 1px solid #343472;
+      color: #343472; }
