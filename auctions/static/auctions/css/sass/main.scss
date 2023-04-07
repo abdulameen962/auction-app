@@ -101,6 +101,7 @@ nav {
         justify-content: center;
         @include respond(tab) {
             justify-content: flex-start;
+            align-items: flex-start;
         }
     }
     li.nav-drop {
@@ -189,9 +190,6 @@ nav {
                 margin-right: 35px;
                 @include respond(tab) {
                     display: block;
-                }
-                @include respond(lphone) {
-                    display: none;
                 }
             }
             &.contact2 {

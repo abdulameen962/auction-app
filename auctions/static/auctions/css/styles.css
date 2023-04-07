@@ -291,6 +291,10 @@ nav {
   nav div.collapse {
     display: flex;
     justify-content: center; }
+    @media screen and (min-width: 0px) and (max-width: 991px) {
+      nav div.collapse {
+        justify-content: flex-start;
+        align-items: flex-start; } }
   @media screen and (min-width: 0px) and (max-width: 991px) {
     nav li.nav-drop {
       position: relative; } }
@@ -353,18 +357,21 @@ nav {
           transition: all 0.5s ease; }
         nav div.container-fluid div ul li a#navbarDropdown {
           margin-right: 30px; }
+        @media screen and (min-width: 0em) and (max-width: 479px) {
+          nav div.container-fluid div ul li a {
+            font-size: 14px; } }
       @media screen and (min-width: 0px) and (max-width: 991px) {
         nav div.container-fluid div ul li {
           padding: 20px 0px 0px 0px; } }
+      @media screen and (min-width: 0em) and (max-width: 479px) {
+        nav div.container-fluid div ul li {
+          padding: 10px 0px 0px 0px; } }
     nav div.container-fluid a.contact1 {
       display: none;
       margin-right: 35px; }
       @media screen and (min-width: 0px) and (max-width: 991px) {
         nav div.container-fluid a.contact1 {
           display: block; } }
-      @media screen and (min-width: 0px) and (max-width: 767px) {
-        nav div.container-fluid a.contact1 {
-          display: none; } }
     @media screen and (min-width: 0px) and (max-width: 991px) {
       nav div.container-fluid a.contact2 {
         display: none; } }
@@ -407,7 +414,7 @@ div.firstrow {
           padding-top: 5px; }
           @media screen and (min-width: 0em) and (max-width: 479px) {
             div.firstrow section.splide > div.splide__track ul.splide__list > li div.row > div.text p {
-              line-height: 35px; } }
+              line-height: 25px; } }
         div.firstrow section.splide > div.splide__track ul.splide__list > li div.row > div.text p:nth-child(4) {
           margin-bottom: 40px; }
         div.firstrow section.splide > div.splide__track ul.splide__list > li div.row > div.text a {
@@ -442,10 +449,13 @@ div.firstrow {
             margin-bottom: 15px; }
           div.firstrow section.splide > div.splide__track ul.splide__list > li div.row > div.text a span {
             margin: 0px 3px; }
+            @media screen and (min-width: 0em) and (max-width: 479px) {
+              div.firstrow section.splide > div.splide__track ul.splide__list > li div.row > div.text a span {
+                margin-top: 5px; } }
           @media screen and (min-width: 0em) and (max-width: 479px) {
             div.firstrow section.splide > div.splide__track ul.splide__list > li div.row > div.text a {
               display: block;
-              margin: 5px 0px 0px 0px; } }
+              margin: 5px 0px 10px 0px; } }
       div.firstrow section.splide > div.splide__track ul.splide__list > li div.row > div.img {
         display: flex;
         justify-content: center;
@@ -454,7 +464,8 @@ div.firstrow {
         div.firstrow section.splide > div.splide__track ul.splide__list > li div.row > div.img img {
           min-width: 380px;
           min-height: 450px;
-          max-height: 500px; }
+          max-height: 500px;
+          max-width: 100%; }
           @media screen and (min-width: 0em) and (max-width: 479px) {
             div.firstrow section.splide > div.splide__track ul.splide__list > li div.row > div.img img {
               border-radius: 15px; } }
