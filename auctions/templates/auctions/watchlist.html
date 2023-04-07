@@ -10,7 +10,7 @@ Watchlists
         <a href="{% url 'auction:listing' list.id %}">
             <div class="row itemrow">
                 <div class="col-12 img">
-                    <img src="../../media/{{ list.image }}" alt="{{ list.itemname }}" class="itemimage">
+                    <img src="{{ list.image.url }}" alt="{{ list.itemname }}" class="itemimage">
                 </div>
                 <div class="col-12 text">
                     <h3> {{ list.itemname }} </h3>

@@ -15,7 +15,7 @@
                                 <a href="{% url 'auction:listing' list.id %}"><span>See details</span> <span class="material-icons">north_east</span></a>
                             </div>
                             <div class="col-sm-12 col-md-12 col-lg-6 img">
-                                <img src="../../media/{{ list.image }}" alt="{{ list.itemname }}" class="itemimage">
+                                <img src="{{ list.image.url }}" alt="{{ list.itemname }}" class="itemimage">
                             </div>
                         </div>
                     </li>
@@ -29,7 +29,7 @@
             <div class="splide__track">
                 <ul id="thumbnails" class="splide__list thumbnails">
                     {% for list in listings %}
-                    <li class="splide__slide thumbnail "><img src="../../media/{{ list.image }}" alt="{{ list.itemname }}"></li>
+                    <li class="splide__slide thumbnail "><img src="{{ list.image.url }}" alt="{{ list.itemname }}"></li>
                     {% endfor %}
                 </ul>
             </div>
@@ -46,7 +46,7 @@
         <a href="{% url 'auction:listing' list.id %}">
             <div class="row itemrow">
                 <div class="col-12 img">
-                    <img src="../../media/{{ list.image }}" alt="{{ list.itemname }}" class="itemimage">
+                    <img src="{{ list.image.url }}" alt="{{ list.itemname }}" class="itemimage">
                 </div>
                 <div class="col-12 text">
                     <h3> {{ list.itemname }} </h3>
@@ -67,7 +67,7 @@
         <a href="{% url 'auction:listing' list.id %}">
             <div class="row itemrow">
                 <div class="col-12 img">
-                    <img src="../../media/{{ list.image }}" alt="{{ list.itemname }}" class="itemimage">
+                    <img src="{{ list.image.url }}" alt="{{ list.itemname }}" class="itemimage">
                 </div>
                 <div class="col-12 text">
                     <h3> {{ list.itemname }} </h3>
