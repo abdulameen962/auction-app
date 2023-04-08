@@ -290,9 +290,6 @@ div.firstrow {
                                 }
                                 span {
                                     margin: 0px 3px;
-                                    @include respond(phone) {
-                                        margin-top: 5px;
-                                    }
                                 }
                                 @include respond(phone) {
                                     display: block;
@@ -302,6 +299,11 @@ div.firstrow {
                         }
                         &>div.img {
                             @include flex(yes);
+                            @include respond(tab) {
+                                justify-content: flex-start;
+                                align-items: flex-start;
+                                margin-top: 40px;
+                            }
                             img {
                                 min-width: 380px;
                                 min-height: 450px;

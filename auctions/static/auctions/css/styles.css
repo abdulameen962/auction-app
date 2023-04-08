@@ -457,9 +457,6 @@ div.firstrow {
             margin-bottom: 15px; }
           div.firstrow section.splide > div.splide__track ul.splide__list > li div.row > div.text a span {
             margin: 0px 3px; }
-            @media screen and (min-width: 0em) and (max-width: 479px) {
-              div.firstrow section.splide > div.splide__track ul.splide__list > li div.row > div.text a span {
-                margin-top: 5px; } }
           @media screen and (min-width: 0em) and (max-width: 479px) {
             div.firstrow section.splide > div.splide__track ul.splide__list > li div.row > div.text a {
               display: block;
@@ -469,6 +466,11 @@ div.firstrow {
         justify-content: center;
         align-items: center;
         flex-direction: column; }
+        @media screen and (min-width: 0px) and (max-width: 991px) {
+          div.firstrow section.splide > div.splide__track ul.splide__list > li div.row > div.img {
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 40px; } }
         div.firstrow section.splide > div.splide__track ul.splide__list > li div.row > div.img img {
           min-width: 380px;
           min-height: 450px;
