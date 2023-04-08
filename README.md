@@ -31,6 +31,7 @@
 - Users check for listings based on their categories
 - Going to the categories page and choosing that which the user wants to see
 
+
 ### Close Listings
 - Users that created listings can close listings they create when they wish
 
