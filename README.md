@@ -2,7 +2,7 @@
 ** Auctions is an auction app for users to create test accounts and auction any good of their choice,set a minimum bid price,add items to watchlist etc
 
 ## Features of the app
-- Register and login
+- Register and login 
 - View auction listings
 - Create auction listing
 - Watchlist
